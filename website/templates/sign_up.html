@@ -1,0 +1,52 @@
+{% extends "base.html" %} {% block title %}SIGN UP{% endblock %} {% block
+    content %}
+    <form method="POST"> <!--The form method attribute defines the HTTP method for sending form-data to the action URL-->
+      <h3 align="center">SIGN UP</h3>
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <!-- PLACE HOLDER - The placeholder attribute specifies a short hint that describes the expected value of an input field 
+        TYPE - The HTML type Attribute is used to specify the type of button for <button> elements
+        CLASS-  Use a class when you want to consistently style multiple elements throughout the page/site
+        ID - The identity document is used to connect a person to information about the person, often in a database.-->
+        <input
+          type="email"
+          class="form-control"
+          id="email"
+          name="email"
+          placeholder="Enter email"
+        />
+      </div>
+      <div class="form-group">
+        <label for="firstName">First Name</label>
+        <input
+          type="text"
+          class="form-control"
+          id="firstName"
+          name="firstName"
+          placeholder="Enter first name"
+        />
+      </div>
+      <div class="form-group">
+        <label for="password1">Password</label>
+        <input
+          type="password"
+          class="form-control"
+          id="password1"
+          name="password1"
+          placeholder="Enter password"
+        />
+      </div>
+      <div class="form-group">
+        <label for="password2">Password (Confirm)</label>
+        <input
+          type="password"
+          class="form-control"
+          id="password2"
+          name="password2"
+          placeholder="Confirm password"
+        />
+      </div>
+      <br />
+      <button type="submit" class="btn btn-primary">Submit</button> <!--blue button-->
+    </form>
+    {% endblock %}
